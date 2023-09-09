@@ -14,3 +14,12 @@ lo que devuelve el servidor tiene que ser como esto :
 <div id="mensaje2">
     ADRIANA
 </div>
+
+Podemos tambien hacer peticiones ajax 
+<div  @click='$ajax("/nombre/56", {method: "get",target:"mensaje mensaje2"})'>
+        enviar
+</div>
+<div  class="cursor-pointer"
+          @click='nombre = JSON.stringify(param);$ajax("/nombre2", {method: "post",body:{nombre,apellidos} ,target:"mensaje3 mensaje4"})'>
+        enviar2
+</div>
